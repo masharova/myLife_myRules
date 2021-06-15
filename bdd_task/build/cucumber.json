@@ -1,0 +1,262 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-15T12:04:19.542Z",
+        "line": 3,
+        "name": "error message is displayed upon registration with invalid email pattern",
+        "description": "",
+        "id": "git-hub-sign-in;error-message-is-displayed-upon-registration-with-invalid-email-pattern",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3452400600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Github login page is opened",
+            "match": {
+              "location": "LoginPageSteps.githubHomePageIsOpened()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 42588500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters “invalid” into email field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "“invalid”",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginPageSteps.userEntersValueIntoEmailField(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 548771100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "red error sign inside the email field should be displayed",
+            "match": {
+              "location": "LoginPageSteps.redErrorSignInsideTheEmailFieldShouldBeDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 32339000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "error message below email field should be displayed",
+            "match": {
+              "location": "LoginPageSteps.errorMessageBelowEmailFieldShouldBeDisplayed()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-15T12:04:23.660Z",
+        "line": 9,
+        "name": "message under password field indicates a completeness of password requirements",
+        "description": "",
+        "id": "git-hub-sign-in;message-under-password-field-indicates-a-completeness-of-password-requirements",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 347393100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Github login page is opened 1",
+            "match": {
+              "location": "LoginPageSteps.githubLoginPageIsOpenedForSecondScenario()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 73206000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user enters “AAA” into password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "“AAA”",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginPageSteps.userEntersValueIntoPasswordField(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 23396500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "“at least fifteen characters” message should be marked red",
+            "match": {
+              "location": "LoginPageSteps.atLeastFifteenCharactersMessageShouldBeMarkedRed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 25973400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "“a lowercase letter” message should be marked red",
+            "match": {
+              "location": "LoginPageSteps.aLowercaseLetterMessageShouldBeMarkedRed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50456700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user enters “AAAaaa” into password field again",
+            "match": {
+              "arguments": [
+                {
+                  "val": "“AAAaaa”",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginPageSteps.userEntersInvalidIntoPasswordFieldAgain(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 18635000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "“at least fifteen characters” message should be marked red again",
+            "match": {
+              "location": "LoginPageSteps.atLeastFifteenCharactersMessageShouldBeMarkedRedAgain()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 18403300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "“a lowercase letter” message should be marked green",
+            "match": {
+              "location": "LoginPageSteps.aLowercaseLetterMessageShouldBeMarkedGreen()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-15T12:04:24.220Z",
+        "line": 18,
+        "name": "error message is displayed upon registration with already existent username",
+        "description": "",
+        "id": "git-hub-sign-in;error-message-is-displayed-upon-registration-with-already-existent-username",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 343265300,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Github login page is opened 2",
+            "match": {
+              "location": "LoginPageSteps.githubLoginPageIsOpened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 27079100,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user enters masharova already existent username into username field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "masharova",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginPageSteps.userEntersAlreadyExistentUsernameIntoUsernameField(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 523693600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "red error sign inside username field should be displayed",
+            "match": {
+              "location": "LoginPageSteps.redErrorSignInsideUsernameFieldShouldBeDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 20021200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "error message below username field should be displayed",
+            "match": {
+              "location": "LoginPageSteps.errorMessageBelowUsernameFieldShouldBeDisplayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15934700,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "suggested usernames in error message contains the username entered",
+            "match": {
+              "location": "LoginPageSteps.suggestedUsernamesInErrorMessageContainsTheUsernameEntered()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Git Hub sign in",
+    "description": "",
+    "id": "git-hub-sign-in",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Login.feature",
+    "tags": []
+  }
+]
